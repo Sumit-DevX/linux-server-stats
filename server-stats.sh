@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOTAL_CPU_USAGE=$(top -bn1 | awk '/Cpu\(s\)/ {print 100 - $8}')
+TOTAL_CPU_USAGE=$(top -bn1 | awk '/Cpu\(s\)/ {print $2 + $4}')
 
 TOTAL_MEM_USED=$(free | awk '/Mem/ && !/Swap/ {printf "%.2f", ($3/$2)*100}')
 
