@@ -30,3 +30,5 @@ A simple shell script that provides Linux server stats
    ./server-stats.sh
    ```
    This will display your Linux server statistics.
+
+Poject URL :- https://roadmap.sh/projects/server-stats
